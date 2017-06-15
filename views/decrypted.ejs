@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Encrypt-r-us</title>
+	</head>
+	<body>
+		<h1>Encrypt-R-us</h1>
+
+		<form action="/encrypt" method="POST">
+			<p>Naam:</p>
+			<input type="text" name="name" required>
+			<p>Geheime tekst:</p>
+			<input type="text" name="secrettext" value="<%= dec %>">
+			<p>Wachtwoord:</p>
+			<input type="password" name="password" required>
+			<br>
+			<br>
+			<input type="submit">
+		</form>
+	</body>
+</html>
