@@ -1,20 +1,26 @@
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
 		<title>Encrypt-r-us</title>
 	</head>
-	<body>
-		<h1>Encrypt-R-us</h1>
-
-		<form action="/encrypt" method="POST">
-			<p>Naam:</p>
-			<input type="text" name="name" required>
-			<p>Geheime tekst:</p>
-			<input type="text" name="secrettext" value="<%= dec %>">
-			<p>Wachtwoord:</p>
-			<input type="password" name="password" required>
-			<br>
-			<br>
-			<input type="submit">
-		</form>
+	<body style="padding-top: 20px;">
+		<div style="margin: auto; float: center; width: 65%;" class="card">
+			<div class="card-header">
+				<h1 class="card-header-title">Encrypt-R-us</h1>
+			</div>
+			<div class="card-content">
+				<form action="/encrypt" method="POST">
+					<label class="label">Naam:</label>
+					<input class="input" type="text" name="name" required>
+					<label class="label">Geheime tekst:</label>
+					<input class="input" type="text" name="secrettext" value="<%= dec %>">
+					<label class="label">Wachtwoord:</label>
+					<input class="input" type="password" name="password" required>
+					<br>
+					<br>
+					<input class="button is-primary" type="submit">
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
