@@ -7,11 +7,11 @@
 
 		<form action="/decrypt" method="POST">
 			<p>Naam:</p>
-			<input type="text" name="name">
+			<input type="text" name="name" required>
 			<p>Geheime tekst:</p>
 			<input type="text" name="secrettext" value="<%= crypted %>">
 			<p>Wachtwoord:</p>
-			<input type="secret" name="password">
+			<input type="password" name="password" required>
 			<br>
 			<br>
 			<input type="submit">

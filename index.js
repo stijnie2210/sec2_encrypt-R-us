@@ -36,9 +36,10 @@ router.post('/decrypt', function(req, res, next) {
 	var password = req.body.password
 
 	var decipher = crypto.createDecipher(algorithm, name + password)
-	var dec = decipher.update(text,'hex','utf8')
+	var dec = decipher.update(secrettext,'hex','utf8')
 	dec += decipher.final('utf8')
-	return dec
+
+	res.render('decrypted.ejs', { dec })
 })
 
 app.use(router)
