@@ -1,0 +1,19 @@
+{
+  "name": "encrypt-r-us",
+  "version": "1.0.0",
+  "description": "sec2 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stijnie2210/sec2_encrypt-R-us.git"
+  },
+  "author": "Stijn Mommersteeg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stijnie2210/sec2_encrypt-R-us/issues"
+  },
+  "homepage": "https://github.com/stijnie2210/sec2_encrypt-R-us#readme"
+}
